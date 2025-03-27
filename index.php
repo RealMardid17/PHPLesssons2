@@ -14,10 +14,10 @@
     </form>
 
 <?php   
-    //this code is adding any name in front of "is a handsome person"
+    //this code is adding any name in front of "rages a lot when playing video games!"
     $name = $_GET['person'];
-    // what the code is going to pop up when you put "name"
-    echo $name." is a handsome person!";
+    // what the code is going to pop up when you put "name...."
+    echo $name." rages a lot when playing video games!";
 ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
  
