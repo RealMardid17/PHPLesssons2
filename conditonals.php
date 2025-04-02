@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <style>
-      body {
+    <style>      body {
         background-color: black;
         color: white;
       }
@@ -37,8 +36,9 @@
       }
     </style>
   </head>
+  
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-dark text-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -55,12 +55,12 @@
               <a class="nav-link active" aria-current="page" href="conditionals.php">Conditionals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="calender.php">Calendar</a>
+              <a class="nav-link active" aria-current="page" href="calendar.php">Calendar</a>
             </li>
             <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="calculator.php">calculator</a>
-        </li>
-
+              <a class="nav-link active" aria-current="page" href="calculator.php">Calculator</a>
+            </li>
+            </li>
             <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="operators.php">operator</a>
         </li>
@@ -68,30 +68,29 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
 
-    <?php
-      // String
-      $nameString = 'Coding is fun';
+    <div class="container mt-4">
+      <?php   
+        $x = 1;
 
-      // Integer
-      $age = 20;
-
-      // Float
-      $floatValue = 20.5784;
-
-      // Boolean
-      $isTrue = true; // Correct assignment to a variable
-      $isFalse = false; // Correct assignment to a variable
-
-      // Array
-      $names = array("Daniel", "Dennis", "Michael");
-      echo $names[1]; // Correct way to access array element
-    ?>
+        if ($x == 1) {
+          echo "Daniel is very handsome!";
+        } elseif ($x == 2) {
+          echo "Daniel is kinda handsome!";
+        } elseif ($x == 3) {
+          echo "Daniel is kinda handsome!";
+        } elseif ($x == 4) {
+          echo "Daniel is kinda handsome!";
+        } else {
+          echo "Daniel is very ugly!";
+        }
+      ?>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

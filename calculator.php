@@ -25,12 +25,13 @@
           <a class="nav-link active" aria-current="page" href="calender.php">calender</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="calculator">calculator</a>
+          <a class="nav-link active" aria-current="page" href="calculator.php">calculator</a>
         </li>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="operators.php">operator</a>
         </li>
+
 
       </ul>
       <form class="d-flex" role="search">
@@ -41,33 +42,24 @@
   </div>
 </nav>
 <style>
-  .navbar {
-  background-color: black;
-}
-
-      /* Apply background color and text color */
       body {
         background-color: black;
         color: white;
       }
 
-      /* Navbar styling - set background to black */
-      .navbar {
-        background-color: black;
-      }
-
-      /* Navbar links color */
-      .navbar a {
-        color: white !important;
-      }
-
-      /* Apply white button style */
       button {
         background-color: white;
         color: black;
       }
 
-      /* Input field style to match the theme */
+      .navbar {
+        background-color: #333;
+      }
+
+      .navbar a {
+        color: white !important;
+      }
+
       input[type="text"] {
         background-color: #555;
         color: white;
@@ -79,23 +71,49 @@
         color: white;
         border-color: #aaa;
       }
-    </style>  </head>
-
-
+    </style>
+</head>
   <body>
-    <form method="GET"> 
-<input  type="text" name="person">
-<button> SUBMIT</button>
+    <form>
+        <input type ="text" name="num1" placeholder= "number 1">
+        <input type ="text" name="num2" placeholder= "number 2">
+        <select name ="operator">
+            <option>None</option>
+            <option>Add</option>
+            <option>Subtract</option>
+            <option>Multiply</option>
+            <option>Divide</option>
+        </select>
+        <br>
+        <button type="submit" name ="submit">Calculate</button>
     </form>
+    <p>The answer is:</p>
+    <?php
+        if (isset($_GET['submit'])) {
 
-<?php   
-    //this code is adding any name in front of "rages a lot when playing video games!"
-    $name = $_GET['person'];
-    // what the code is going to pop up when you put "name...."
-    echo $name." rages a lot when playing video games!";
-?>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
-</body>
-
+            $result1 = $_GET['num1'];
+            $result2 = $_GET['num2'];
+            $operator = $_GET['operator'];
+            switch ($operator) {
+                case "None":
+                    echo "You need to select a method";
+                break;
+                case "Add":
+                    echo $result1 + $result2;
+                break;
+                case "Subtract":
+                    echo $result1 - $result2;;
+                break;
+                case "Multiply":
+                    echo $result1 * $result2;
+                break;
+                case "Diviude":
+                    echo $result1 / $result2;
+                   
+                break;
+            }
+        }
+    ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>

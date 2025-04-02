@@ -37,7 +37,9 @@
       }
     </style>
   </head>
+
   <body>
+    <!-- Navbar code -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,16 +57,14 @@
               <a class="nav-link active" aria-current="page" href="conditionals.php">Conditionals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="calender.php">Calendar</a>
+              <a class="nav-link active" aria-current="page" href="calendar.php">Calendar</a>
             </li>
             <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="calculator.php">calculator</a>
-        </li>
-
+              <a class="nav-link active" aria-current="page" href="calculator.php">Calculator</a>
+            </li>
             <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="operators.php">operator</a>
-        </li>
-
+              <a class="nav-link active" aria-current="page" href="operators.php">Operator</a>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -74,26 +74,42 @@
       </div>
     </nav>
 
-    <?php
-      // String
-      $nameString = 'Coding is fun';
+    <div class="container mt-4">
+      <?php   
+        // Arithmetic Operators
+        echo 5**2 . "<br>";
 
-      // Integer
-      $age = 20;
+        // Assignment Operators
+        $x = 100;
+        $x /= 20;
+        echo $x . "<br>";
 
-      // Float
-      $floatValue = 20.5784;
+        // Comparison Operators
+        $x = 5;
+        $y = 10;
 
-      // Boolean
-      $isTrue = true; // Correct assignment to a variable
-      $isFalse = false; // Correct assignment to a variable
+        if ($x >= $y) {
+          echo "True!<br>";
+        } else {
+          echo "False!<br>";
+        }
 
-      // Array
-      $names = array("Daniel", "Dennis", "Michael");
-      echo $names[1]; // Correct way to access array element
-    ?>
+        // Increment/Decrement Operators
+        $x = 10;
+        echo $x-- . "<br>"; // Post-decrement
+        echo $x . "<br>";   // Value after decrement
 
-    <!-- Bootstrap JS -->
+        // Logical Operators
+        $x = 20;
+        $y = 20;
+
+        // Using XOR operator correctly
+        if ($x == $y xor 1 == 1) {
+          echo "True <br>";
+        }
+      ?>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -32,6 +32,7 @@
           <a class="nav-link active" aria-current="page" href="operators.php">operator</a>
         </li>
 
+
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -41,33 +42,24 @@
   </div>
 </nav>
 <style>
-  .navbar {
-  background-color: black;
-}
-
-      /* Apply background color and text color */
       body {
         background-color: black;
         color: white;
       }
 
-      /* Navbar styling - set background to black */
-      .navbar {
-        background-color: black;
-      }
-
-      /* Navbar links color */
-      .navbar a {
-        color: white !important;
-      }
-
-      /* Apply white button style */
       button {
         background-color: white;
         color: black;
       }
 
-      /* Input field style to match the theme */
+      .navbar {
+        background-color: #333;
+      }
+
+      .navbar a {
+        color: white !important;
+      }
+
       input[type="text"] {
         background-color: #555;
         color: white;
@@ -79,23 +71,36 @@
         color: white;
         border-color: #aaa;
       }
-    </style>  </head>
-
-
+    </style>
+</head>
   <body>
-    <form method="GET"> 
-<input  type="text" name="person">
-<button> SUBMIT</button>
-    </form>
+    <?php
+        $dayofweek = date("w");
 
-<?php   
-    //this code is adding any name in front of "rages a lot when playing video games!"
-    $name = $_GET['person'];
-    // what the code is going to pop up when you put "name...."
-    echo $name." rages a lot when playing video games!";
-?>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
-</body>
+        switch ($dayofweek) {
+            case 1:
+                echo "It is Monday!";
+                break;
+            case 2:
+                echo "It is Tuesday!";
+                 break;
+            case 3:
+                echo "It is Wednesday!";
+                break;        
+            case 4:
+                echo "It is Thursday!";
+                break;  
+            case 5:
+                echo "It is Friday!";
+                break;  
+            case 6:
+                echo "It is Saturday!";
+                break;
+            case 0:
+                 echo "It is Sunday!";
+                 break;
+        }
 
-</html>
+    ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
