@@ -40,6 +40,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="header.php">header</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="loops.php">loops</a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -89,24 +92,35 @@
       }
     </style>  </head>
 
-<body>
+
+  
+</html>
+
 
 
 <?php
-// loop 
+    include 'functions/user-functions.php';
+    ?>
 
-//while loop
-//do while loop 
-//for loop
-//foreach loop
-$x = 1;
-while ($x <=5){ 
-     echo "hi there<br>";
-     $x=++;
-}
-?>
-</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title of the document</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+            <ul>
+                <liv><a href="">nav1</a></li>
+                <liv><a href="">nav2</a></li>                
+                <liv><a href="">nav3</a></li>
+                <liv><a href="">nav4</a></li>
+</ul>
+</nav>
+</header>    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
 
 </html>

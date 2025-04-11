@@ -44,28 +44,36 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="datatypes.php">Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="conditionals.php">Conditionals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="calendar.php">Calendar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="calculator.php">Calculator</a>
-            </li>
-            </li>
-            <li class="nav-item">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="datatypes.php">data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="condtionals.php">condtionals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="calender.php">calender</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="calculator">calculator</a>
+        </li>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="operators.php">operator</a>
         </li>
-
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="arrays.php">arrays</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="functions.php">function</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="header.php">header</a>
+        </li>
+      </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Search</button>
